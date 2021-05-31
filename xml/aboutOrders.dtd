@@ -1,0 +1,16 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT aboutOrders (allOrders,popProducts)>
+<!ELEMENT allOrders (order*)>
+<!ELEMENT order (orderCode,lastName,firstName,totalValue)>
+<!ELEMENT orderCode (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT totalValue (#PCDATA)>
+<!ELEMENT popProducts (product*)>
+<!ELEMENT product (prodCode,prodName,totalSoldQuantity)>
+<!ELEMENT prodCode (#PCDATA)>
+<!ELEMENT prodName (#PCDATA)>
+<!ELEMENT totalSoldQuantity (#PCDATA)>
+
+<!ATTLIST aboutOrders dateFrom CDATA #IMPLIED>
+<!ATTLIST aboutOrders dateTo CDATA #IMPLIED>

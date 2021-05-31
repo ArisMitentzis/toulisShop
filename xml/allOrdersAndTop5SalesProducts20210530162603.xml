@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aboutOrders SYSTEM "aboutOrders.dtd">
+<aboutOrders dateFrom="23-05-2021" dateTo="30-06-2021">
+  <allOrders>
+    <order>
+      <orderCode>80</orderCode>
+      <lastName>Τσαλτιδης</lastName>
+      <firstName>Τακης</firstName>
+      <totalValue>57.4</totalValue>
+    </order>
+  </allOrders>
+  <popProducts>
+    <product>
+      <prodCode>18</prodCode>
+      <prodName>Τουμπανοκροκέτες (4kg)</prodName>
+      <totalSoldQuantity>2</totalSoldQuantity>
+    </product>
+  </popProducts>
+</aboutOrders>

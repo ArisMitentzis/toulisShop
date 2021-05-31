@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aboutOrders SYSTEM "aboutOrders.dtd">
+<aboutOrders dateFrom="18-10-2020" dateTo="25-10-2020">
+  <allOrders>
+    <order>
+      <orderCode>68</orderCode>
+      <lastName>Πεκος</lastName>
+      <firstName>Γιώργος</firstName>
+      <totalValue>25.45</totalValue>
+    </order>
+    <order>
+      <orderCode>66</orderCode>
+      <lastName>Τσαλτιδης</lastName>
+      <firstName>Τακης</firstName>
+      <totalValue>4.05</totalValue>
+    </order>
+    <order>
+      <orderCode>67</orderCode>
+      <lastName>Τσαλτιδης</lastName>
+      <firstName>Τακης</firstName>
+      <totalValue>2.1</totalValue>
+    </order>
+  </allOrders>
+  <popProducts>
+    <product>
+      <prodCode>22</prodCode>
+      <prodName>Σκυλοπαιχνίδι Σκαντζόχοιρος</prodName>
+      <totalSoldQuantity>4</totalSoldQuantity>
+    </product>
+    <product>
+      <prodCode>23</prodCode>
+      <prodName>Mocdog</prodName>
+      <totalSoldQuantity>2</totalSoldQuantity>
+    </product>
+    <product>
+      <prodCode>24</prodCode>
+      <prodName>Skylo-news</prodName>
+      <totalSoldQuantity>2</totalSoldQuantity>
+    </product>
+  </popProducts>
+</aboutOrders>
