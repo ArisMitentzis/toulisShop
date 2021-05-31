@@ -17,7 +17,7 @@ $('.delProduct').on('click', function(e){
 	var currentProdcode = $rowΤοDelete.find('.prodCode').text();
 	
 	// kalei to async_list_delete_product.php pou tha svhsei ston DB pinaka PRODUCTS to sygkekrimeno proion
-	ajaxCaller ("GET","async_list_delete_product.php?" + "del=" + currentProdcode);
+	ajaxCaller ("GET",rootFolderOfAsyncPhp + "async_list_delete_product.php?" + "del=" + currentProdcode);
 	
 	// ginetai delete h epilegmenh row ston pinaka me ta proionta
 	$rowΤοDelete.remove();

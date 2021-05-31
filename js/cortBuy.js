@@ -8,6 +8,9 @@
 	// Epishs, enhmerwnetai h endeiksh tou kalathiou sto header
 
 	// to event afora klik se koumpia kalathiou
+	
+	//var rootOfAsyncPhp = "/toulisShop/asyncPhp/"
+	
 $('.buyButton').on('click', function(e){
 	
 	e.preventDefault();
@@ -22,7 +25,7 @@ $('.buyButton').on('click', function(e){
 	var ser = $('#cortForm').serialize();
 	
 	// kalei to async_cort.php pou tha enhmerwsei to session-kalathi
-	ajaxCallerWithDataArgumentString ("POST","async_cort.php",ser);
+	ajaxCallerWithDataArgumentString ("POST",rootFolderOfAsyncPhp + "async_cort.php",ser);
 	
 	// lambanei to neo keimeno (apo thn ajax call sto async_cortHline) pou prepei na fanei sthn endeiksh tou kalathiou 
 	// sto header kai ananewnei to keimeno
@@ -33,7 +36,7 @@ $('.buyButton').on('click', function(e){
 	
 	// kalei to async_cortHline.php pou tha enhmerwsei to keimeno ths endeikshs tou kalathiou 
 	// sto header 
-	ajaxCallerWithSuccessFunction ("POST","async_cortHline.php",updateCartHeader);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_cortHline.php",updateCartHeader);
 });
 
 

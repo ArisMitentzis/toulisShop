@@ -1,9 +1,11 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php $root = __DIR__ . "/../"; ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
+<?php include $root . "functions_and_classes\\front_end_functions.php" ?>
+<?php include $root . "functions_and_classes\\controller_functions.php" ?>
+<?php include $root . "functions_and_classes\\back_end_functions.php" ?>
+<?php include $root . "functions_and_classes\\classes.php" ?>
+
+<?php include $root . "scripts\\connect_to_db.php" ?>
 
 <?php
         

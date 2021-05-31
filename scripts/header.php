@@ -66,7 +66,14 @@
 			</div>
 -->
 <!--            <br>-->
-            <div class="mt-n2 ml-n3"><h1 class="ml-n4" style="font-weight:bold;color:#0000ff;">Toulis shop</h1></div>
+            <div class="mt-n2 ml-n3"><h1 class="ml-n4" style="font-weight:bold;color:#0000ff;">Toulis shop</h1>
+                <div class="pt-3">
+                <small class="pt-2 ml-n3 font-weight-bolder">About:</small>
+                <br/>
+                <pre class="zmt-2 ml-n3"><a href="about.php" class="zmt-2 zml-n3"  style="font-size:12px">This project!</a>  <a href="aboutTouli.php" class="zmt-n2 zml-n3"  style="font-size:12px">Touli the cat!</a>
+                </pre>
+                </div>
+            </div>
 		</div>
 		
 		<!-- η δεξιά στήλη του header που περιέχει τα υπόλοιπα(λογαριασμό,καλάθι,email,τηλέφωνο) -->

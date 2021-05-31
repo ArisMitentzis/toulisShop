@@ -19,7 +19,7 @@
 
 <div class="container-width mt-2" style="height:1100px;background-color:#e9d28c">
 	
-    <h2 class="font-weight-bolder mx-auto   pl-4" style="width:800px"><pre>                    About</pre></h2>
+    <h2 class="font-weight-bolder mx-auto   pl-4" style="width:800px"><pre>                 About this project</pre></h2>
              
         <div class="jumbotron mx-auto mjr-5" style="border-style:solid;border-radius: 12px; border-color:#f0ad4e;height:900px;width:1150px;background-color:#e9d28c;overflow-y: scroll;">
             

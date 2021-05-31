@@ -50,7 +50,7 @@ $('#filtersDiv').on('click', function(e){
 	}
 	
 	// kalei to async_getMaxPage.php
-	ajaxCallerWithSuccessFunction ("GET",'async_getMaxPage.php?type=' + typeValue,updateMaxPage);
+	ajaxCallerWithSuccessFunction ("GET",rootFolderOfAsyncPhp + 'async_getMaxPage.php?type=' + typeValue,updateMaxPage);
 	
 	// vale sto pagination ws endeiksh selidas to 1
 	var $vitrinaPage = $(this).parent().parent().find('.vitrinaPage'); 
@@ -112,7 +112,7 @@ $('#filtersDiv').on('click', function(e){
 	}
 	
 	// kalei to async_pagination.php
-	ajaxCallerWithSuccessFunction ("GET",urlString,updateVitrines);
+	ajaxCallerWithSuccessFunction ("GET",rootFolderOfAsyncPhp + urlString,updateVitrines);
 	
 	// xtisimo toy neou url ths selidas kai ananewsh
 	

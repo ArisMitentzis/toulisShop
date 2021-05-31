@@ -31,16 +31,16 @@ $('.delProduct').on('click', function(e){
 	var $rowToDelete = $aElement.parent().parent();
 	
 	// kalei to async_editCortSum.php pou tha svhsei apo to session kalathi to sygkekrimeno product
-	ajaxCaller ("GET","async_editCortSum.php?" + "del=" + productId);
+	ajaxCaller ("GET",rootFolderOfAsyncPhp + "async_editCortSum.php?" + "del=" + productId);
 	
 	// ginetai delete h epilegmenh row
 	$rowToDelete.remove();
 	
 	// ginetai update h endeiksh pou afora to kalathi sto header
-	ajaxCallerWithSuccessFunction ("POST","async_cortHline.php",updateCartHeader);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_cortHline.php",updateCartHeader);
 	
 	// ginetai update h endeiksh tou sunolikou posou agoras poy emfanizetai akrivws katw apo ton pinaka tou kalathioy
-	ajaxCallerWithSuccessFunction ("POST","async_cortArrayTotalValue.php",updateCortArrayTotalValue);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_cortArrayTotalValue.php",updateCortArrayTotalValue);
 });
 
 // otan allazei h posothta enos proiontos tou kalathiou
@@ -102,13 +102,13 @@ $('.editProduct').on('click', function(e){
 	var argumentString = 'edt=' + productCode + '&newQuantity=' + newQuantity;
 	
 	// kalei to async_editCortSum.php pou tha ananewsei sto session kalathi thn posothta tou sygkekrimenou product
-	ajaxCallerWithDataArgumentString ("POST","async_editCortSum.php",argumentString);
+	ajaxCallerWithDataArgumentString ("POST",rootFolderOfAsyncPhp + "async_editCortSum.php",argumentString);
 	
 	// ginetai update h endeiksh pou afora to kalathi sto header
-	ajaxCallerWithSuccessFunction ("POST","async_cortHline.php",updateCartHeader);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_cortHline.php",updateCartHeader);
 	
 	// ginetai update h endeiksh tou sunolikou posou agoras poy emfanizetai akrivws katw apo ton pinaka tou kalathioy
-	ajaxCallerWithSuccessFunction ("POST","async_cortArrayTotalValue.php",updateCortArrayTotalValue);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_cortArrayTotalValue.php",updateCortArrayTotalValue);
 	
 	//kane to koumpi edit inactive
 	$editIcon.css({

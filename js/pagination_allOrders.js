@@ -76,7 +76,7 @@ $('.pagination').on('click', function(e){
 	}
 	
 	// kalei to async_pagination.php
-	ajaxCallerWithSuccessFunction ("GET",urlString,updateTable);
+	ajaxCallerWithSuccessFunction ("GET",rootFolderOfAsyncPhp + urlString,updateTable);
 	
 	
 	// ananewnei to url xwris refresh

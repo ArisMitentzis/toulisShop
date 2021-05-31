@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aboutOrders SYSTEM "aboutOrders.dtd">
+<aboutOrders dateFrom="24-05-2021" dateTo="31-05-2021">
+  <allOrders>
+    <order>
+      <orderCode>81</orderCode>
+      <lastName>Πεκος</lastName>
+      <firstName>Γιώργος</firstName>
+      <totalValue>14.5</totalValue>
+    </order>
+  </allOrders>
+  <popProducts>
+    <product>
+      <prodCode>19</prodCode>
+      <prodName>Φτηνο-κολαρέξ</prodName>
+      <totalSoldQuantity>4</totalSoldQuantity>
+    </product>
+    <product>
+      <prodCode>17</prodCode>
+      <prodName>Πουλοβερεξ Σκύλου</prodName>
+      <totalSoldQuantity>1</totalSoldQuantity>
+    </product>
+  </popProducts>
+</aboutOrders>

@@ -173,7 +173,7 @@ $('.pagination').on('click', function(e){
 	}
 	
 	// kalei to async_pagination.php
-	ajaxCallerWithSuccessFunction ("GET",urlString,updateProducts);
+	ajaxCallerWithSuccessFunction ("GET",rootFolderOfAsyncPhp + urlString,updateProducts);
 	
 	
 	// xtisimo toy neou url ths selidas kai ananewsh

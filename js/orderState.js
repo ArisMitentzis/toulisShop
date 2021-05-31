@@ -37,7 +37,7 @@ $('.stateSelect').on('change', function (e) {
 	var newStateValue = $currentSelect.val();
 	var currentOrderCode = $currentSelect.closest('tr').find('.orderCodeTd').text();
 	
-	ajaxCallerWithSuccessFunction ("GET",'async_changeOrderState.php?orderCode=' + currentOrderCode + '&oldState=' 
+	ajaxCallerWithSuccessFunction ("GET",rootFolderOfAsyncPhp + 'async_changeOrderState.php?orderCode=' + currentOrderCode + '&oldState=' 
 															+ oldStateValue + '&newState=' + newStateValue,stockAlert);
 });
 

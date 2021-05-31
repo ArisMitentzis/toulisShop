@@ -1,6 +1,8 @@
 
 	// fortwnetai se oses selides kanoun ajax call
 	
+	var rootFolderOfAsyncPhp = "/toulisShop/asyncPhp/";
+	
 	function ajaxCaller (callType,urlString){
 		
 		$.ajax({

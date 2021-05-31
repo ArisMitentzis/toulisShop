@@ -9,7 +9,7 @@ $('#initDBbutton').on('click', function(e){
 		document.getElementById("initializedText").innerHTML = "Αρχικοποιήθηκε";
 		//alert("Hello! I am an alert box!");
 	}
-	ajaxCallerWithSuccessFunction ("POST","async_initiateDB.php",notifyFeedback);
+	ajaxCallerWithSuccessFunction ("POST",rootFolderOfAsyncPhp + "async_initiateDB.php",notifyFeedback);
 });
 
 
