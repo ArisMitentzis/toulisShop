@@ -1,5 +1,9 @@
 #Touli Shop
 
+It is hosted at Heroku and its DB at remotemysql.com.
+
+http://toulisshop.herokuapp.com (prefer Chrome)
+
 The current CV project implements an imaginary pet e-shop. It was created in the context 
 of a university assignment under a short notice and aimed at familiarizing myself with the
 most common web technologies and not necessarily creating the most efficient design. 
@@ -10,7 +14,7 @@ A signed-in user may have a look at the products and add anything to the cart. H
 edit his cart and finalize his order. Of course, he can view all his orders. An admin user has 
 the choice of adding any new product. He can view, edit or delete the existing products. He 
 could also view all the orders and edit their state. Finally, he may view all the user accounts 
-and some statistics. It is hosted at Heroku and its DB at remotemysql.com.
+and some statistics. 
 
 Technical description:
 Back-end:
