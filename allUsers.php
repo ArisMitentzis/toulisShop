@@ -1,15 +1,15 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
-<?php include "scripts\\driver.php" ?>
-<?php include "scripts\\driver_allUsers.php" ?>
+<?php include "scripts/connect_to_db.php" ?>
+<?php include "scripts/driver.php" ?>
+<?php include "scripts/driver_allUsers.php" ?>
 
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
-<?php include "scripts\\menu_admin.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
+<?php include "scripts/menu_admin.php" ?>
 
 
 <div id="tableDiv" class="container-width mt-2" style="height:1100px;background-color:#e9d28c">
@@ -49,9 +49,9 @@
 <script> setLinkActive('adm4')</script>
 
 <!--   To scriptaki pou einai upeuthino gia to pagination     -->
-    <script src="js\\pagination_allOrders.js"></script>
+    <script src="js/pagination_allOrders.js"></script>
 
-<script src="js\\ajaxCaller.js"></script>
-<script src="js\\datatable.js"></script>
+<script src="js/ajaxCaller.js"></script>
+<script src="js/datatable.js"></script>
 
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>

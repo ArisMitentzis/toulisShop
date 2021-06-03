@@ -1,38 +1,56 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
-<?php include "scripts\\driver.php" ?>
-<?php // include "scripts\\driver_account.php" ?>
+<?php include "scripts/connect_to_db.php" ?>
+<?php include "scripts/driver.php" ?>
+<?php // include "scripts/driver_account.php" ?>
 
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
 <?php 
     if (UserType::$userType == UserType::admin){
         
-        include "scripts\\menu_admin.php";
+        include "scripts/menu_admin.php";
     } 
 ?>
 
 
 <div class="container-width mt-2" style="height:1100px;background-color:#e9d28c">
-	
+	<br/><br/>
     <h2 class="font-weight-bolder mx-auto   pl-4" style="width:800px"><pre>                 About this project</pre></h2>
              
         <div class="jumbotron mx-auto mjr-5" style="border-style:solid;border-radius: 12px; border-color:#f0ad4e;height:900px;width:1150px;background-color:#e9d28c;overflow-y: scroll;">
             
-           <p class="mt-n5">Created by <a href="https://www.linkedin.com/in/mitentzisaristeidis/">Mitentzis Aristeidis </a>.<br><br>Το συγκεκριμένο CV project υλοποιεί ένα ηλεκτρονικό κατάστημα Pet Shop. Δημιουργήθηκε ως εργασία, στα πλαίσια της ενότητας ΠΛΗ23.  Στόχος ήταν η εξοικείωση με βασικές web τεχνολογίες και όχι η βέλτιστη σχεδίαση, καθώς υπήρχε στενό και αυστηρό deadline. Υλοποιημένη είναι μόνο η κατηγορία των σκύλων. Οι υπόλοιπες είναι εικονικές. Επιπλέον, οι σελίδες είναι γραμμένες στα ελληνικά διότι έτσι ζητήθηκε αλλά πρόκειται να μεταφραστεί και στα αγγλικά. 
+            <p class="mt-n5">Created by <a href="https://www.linkedin.com/in/mitentzisaristeidis/">Mitentzis Aristeidis </a>.<br><br>The current CV project implements an imaginary pet e-shop. It was created in the context of a university assignment under a short notice and aimed at familiarizing myself with the most common web technologies and not necessarily creating the most efficient design. Only the dog category of products is fully realized and text is written in Greek because of the assignment instructions but plan (maybe) to translate it in English sometime in the future.<br/><br/> A signed-in user may have a look at the
+                products and add anything to the cart. He could also edit his cart and
+                finalize his order. Of course, he can view all his orders. An admin user has
+                the choice of adding any new product. He can view, edit or delete the
+                existing products. He could also view all the orders and edit their state.
+                Finally, he may view all the user accounts and some statistics. It is hosted
+                at Heroku and its DB at remotemysql.com.  
                <br></p>
-            <pre>Πατήστε εδώ για αρχικοποίηση της DB στα αρχικά dummy data.     <button id="initDBbutton" type="button" class="btn btn-secondary">Αρχικοποίηση DB</button>  <span id="initializedText" style="color:red;"></span> </pre>
-            
-               <p><u>Τεχνική περιγραφή:</u><br>
+           
+            <p><u>Technical description:</u><br>
                <b>Back-end:</b>
-                   <pre class="mt-n3">    - MySql database (PETSHOPDB).   - Functional PHP.</pre>
+                   <pre class="mt-n3">    - MySql database   - Functional PHP</pre>
                <b class="pt-n4">Front-end:</b><br>
-                   <pre >   - HTML,CSS,Bootstrap.   - Javascript,JQuery,Ajax ώστε να επιτυγχάνεται διαδραστικότητα χωρίς να απαιτείται επαναφόρτωση της σελίδας.</pre>
-               
+                   <pre >   - HTML,CSS,Bootstrap   - Javascript,JQuery,Ajax</pre>
+            <p/>
+            
+            <br/>
+            <pre>Click here to initiate the DB with some dummy data.     <button id="initDBbutton" type="button" class="btn btn-secondary">Αρχικοποίηση DB</button>  <span id="initializedText" style="color:red;"></span> </pre>
+            
+            <br/>
+            
+            <pre>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</pre>
+            
+            <p class="mt-n1">Το συγκεκριμένο CV project υλοποιεί ένα ηλεκτρονικό κατάστημα Pet Shop. Δημιουργήθηκε ως εργασία, στα πλαίσια της ενότητας ΠΛΗ23.  Στόχος ήταν η εξοικείωση με βασικές web τεχνολογίες και όχι η βέλτιστη σχεδίαση, καθώς υπήρχε στενό και αυστηρό deadline. Υλοποιημένη είναι μόνο η κατηγορία των σκύλων. Οι υπόλοιπες είναι εικονικές. Επιπλέον, οι σελίδες είναι γραμμένες στα ελληνικά διότι έτσι ζητήθηκε αλλά πρόκειται να μεταφραστεί και στα αγγλικά. 
+               <br></p>
+            
+               <p>
+                     
             <u>Βασική λειτουργική περιγραφή:</u><br>
                Υπαρχουν 3 τυποι user:<br> 
                    <pre>   -<u>Guest</u>,δηλαδη not logged in.     -<u>Simple user</u>,δηλαδη logged in but not admin.    - <u>Admin</u>,δηλαδη logged in  and admin.</pre>
@@ -67,7 +85,7 @@
     
 </div>
 
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>
 
-<script src="js\\ajaxCaller.js"></script>
-<script src="js\\initiateDB.js"></script>
+<script src="js/ajaxCaller.js"></script>
+<script src="js/initiateDB.js"></script>

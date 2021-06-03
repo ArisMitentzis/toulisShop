@@ -54,7 +54,7 @@
 					<div class="col" style="height:100%;">
 						<input id="prodStock_<?php echo $indexOfBox;?>"  type="text" class=" " style="width:30px;visibility: hidden;" name="prodStock_<?php echo $indexOfBox;?>" value="<?php echo $row['PRODSTOCK']; ?>" >
 						<button type="submit" class="buyButton btn btn-sm btn-outline-warning mb-2" name="btnPr_<?php echo $indexOfBox?>" style="border:1px;border-color: #2196F3;">
-                            <i class="fas fa-shopping-cart float-left mr-1 " style="font-size:26px;color:#0000ff;"></i>
+                            <i class="material-icons float-left mr-1" style="font-size:32px;color:#0000ff;">add_shopping_cart</i>
 <!--							<small style="font-size:9px;">-->
 <!--								Προσθήκη στο Καλάθι-->
 <!--							</small>	-->
@@ -774,7 +774,24 @@ function echoOrderStates($productTypeCode) {
         
         //global $page;
         //mysqli_data_seek($result,($page*10));
-            
+          
+       // echo $limit;
+       // for($counter2 = 0; $counter2 < $limit; $counter2++){echo $counter2;}
+        /*for($counter = 0; $counter < $limit; $counter++){
+            if ($row = mysqli_fetch_assoc($result))
+            {echo $row['USERCODE'];
+                echo $row['LASTNAME'];
+                echo $row['FIRSTNAME'];
+                echo $row['ORDERCODE'];
+                echo $row['ORDERDATE'];
+                echo $row['TOTALAMOUNT'];
+                echo $row['TOTALVALUE'];
+                echo $row['STATENAME'];
+                //$currentTypeName = $row['TYPENAME'];
+                
+                echo $row['STATE_FK'];}
+        }*/
+        
         for($counter = 0; $counter < $limit; $counter++){
                     
             if ($row = mysqli_fetch_assoc($result)){
@@ -793,13 +810,24 @@ function echoOrderStates($productTypeCode) {
             
                 $customer = $currentLastName  . "_" . $currentFirstName . "(" . $currentUsercode . ")";
 ?>
+<!--
+                <tr>
+                    <td>aaa</td>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                    <td>ddd</td>
+                    <td>eee</td>
+                    <td>zzz</td>
+                    <td>iii</td>
+                </tr>
+-->
+
                 <tr>
                     <td><?php echo $currentLastName . ' ' . $currentFirstName . " (" . $currentUsercode . ")"; ?></td>
                     <td class='orderCodeTd'><?php echo $currentOrdercode; ?></td>
                     <td><?php echo $currentOrderDate; ?></td>
                     <td><?php echo $currentTotalAmount; ?></td>
                     <td><?php echo $currentTotalValue; ?></td>
-<!--                    <td><?php// echo $currentStateName; ?></td>-->
                     <td>
                         <select class="form-control stateSelect" data-initValue="<?php echo $currentStateCode; ?>" style="width:160px">
                         <?php echo echoOrderStates($currentStateCode); ?>
@@ -811,6 +839,8 @@ function echoOrderStates($productTypeCode) {
 								</a>";?>
                     </td>
                 </tr>
+
+
 <?php       }
         }
     }
@@ -1079,7 +1109,7 @@ function echoOrderStates($productTypeCode) {
         $myXmlFile -> load ($currentXmlFile) ;
 
         $myXslFile = new DOMDocument;
-        $myXslFile -> load ('xml\\allOrdersAndTop5SalesProducts.xsl');
+        $myXslFile -> load ('xml/allOrdersAndTop5SalesProducts.xsl');
 
         $XSLTProcessorObject = new XSLTProcessor;
 

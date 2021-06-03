@@ -1,11 +1,11 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\driver.php" ?>
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
+<?php include "scripts/driver.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
 
 
 <div class="container-width mt-2" style="height:1100px;background-color:#e9d28c">
@@ -50,6 +50,6 @@
 </div>
 
 
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>
 
-<script src="js\\fillSampleCredentials.js"></script>
+<script src="js/fillSampleCredentials.js"></script>

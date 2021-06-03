@@ -9,7 +9,7 @@
     $connection;
         
     try {
-        
+        //port 3306
         $connection = mysqli_connect('localhost','root','','PETSHOPDB');
         //echo "db_ok";
     } 

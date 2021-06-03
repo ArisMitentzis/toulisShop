@@ -1,19 +1,19 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
+<?php include "scripts/connect_to_db.php" ?>
 
-<?php include "scripts\\driver.php" ?>
+<?php include "scripts/driver.php" ?>
 
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
 
 <?php 
     if (UserType::$userType == UserType::admin){
         
-        include "scripts\\menu_admin.php";
+        include "scripts/menu_admin.php";
     } 
 ?>
 
@@ -59,6 +59,6 @@
 </div>
 
 <script> setLinkActive('adm6')</script>
-<script src="js\\xmlDate.js"></script>
+<script src="js/xmlDate.js"></script>
 
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>

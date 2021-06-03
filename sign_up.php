@@ -1,14 +1,14 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
+<?php include "scripts/connect_to_db.php" ?>
 
-<?php include "scripts\\driver_sign_up.php" ?>
+<?php include "scripts/driver_sign_up.php" ?>
 
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
 
 
 <div class="container-width mt-2" style="height:1100px;background-color:#e9d28c">
@@ -81,4 +81,4 @@
 
 <script src="js/validate2.js"></script>
 
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>

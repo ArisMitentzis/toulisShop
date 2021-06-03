@@ -28,7 +28,7 @@
     <script src="https://cdn.datatables.net/1.10.24/js/dataTables.jqueryui.min.js"></script>
 -->
     
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--	<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<script src="js/interact.js"></script>
@@ -139,7 +139,7 @@
 				<div class="col">
 					<span>
 						<a href="<?php if (UserType::$userType == UserType::notLogged) {echo "sign_in";} else {echo "page3";}?>.php">
-							<i class="fas fa-shopping-cart float-left mr-1 " style="font-size:26px;color:#0000ff;"></i>		
+							<i class="material-icons float-left mr-1" style="font-size:32px;color:#0000ff;">add_shopping_cart</i>	
 							<span class= "align-middle"> 
 								<small id="cartHlineSmall"><?php echoCartMessage();?></small>
 							</span>

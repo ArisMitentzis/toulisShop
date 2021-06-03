@@ -728,7 +728,7 @@
         $now = str_replace(array(':','-',' '), '',$now);
         
         global $currentXmlFile;
-        $currentXmlFile = "xml\\allOrdersAndTop5SalesProducts" . $now . ".xml";
+        $currentXmlFile = "xml/allOrdersAndTop5SalesProducts" . $now . ".xml";
         
         $domdcObject->save($currentXmlFile);
     }

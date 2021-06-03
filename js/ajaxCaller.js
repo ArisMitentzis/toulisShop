@@ -3,6 +3,8 @@
 	
 	var rootFolderOfAsyncPhp = "/toulisShop/asyncPhp/";
 	
+	//var rootFolderOfAsyncPhp = "";
+	
 	function ajaxCaller (callType,urlString){
 		
 		$.ajax({

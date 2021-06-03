@@ -1,19 +1,19 @@
-<?php include "functions_and_classes\\front_end_functions.php" ?>
-<?php include "functions_and_classes\\controller_functions.php" ?>
-<?php include "functions_and_classes\\back_end_functions.php" ?>
-<?php include "functions_and_classes\\classes.php" ?>
+<?php include "functions_and_classes/front_end_functions.php" ?>
+<?php include "functions_and_classes/controller_functions.php" ?>
+<?php include "functions_and_classes/back_end_functions.php" ?>
+<?php include "functions_and_classes/classes.php" ?>
 
-<?php include "scripts\\connect_to_db.php" ?>
-<?php include "scripts\\driver.php" ?>
-<?php include "scripts\\driver_page2.php" ?>
-<?php include "scripts\\driver_cortConnection.php" ?>
+<?php include "scripts/connect_to_db.php" ?>
+<?php include "scripts/driver.php" ?>
+<?php include "scripts/driver_page2.php" ?>
+<?php include "scripts/driver_cortConnection.php" ?>
 
-<?php include "scripts\\header.php" ?>
-<?php include "scripts\\menu.php" ?>
+<?php include "scripts/header.php" ?>
+<?php include "scripts/menu.php" ?>
 <?php 
     if (UserType::$userType == UserType::admin){
         
-        include "scripts\\menu_admin.php";
+        include "scripts/menu_admin.php";
     } 
 ?>
 	
@@ -68,12 +68,12 @@
     <script> setLinkActive('dogLink')</script>
 
     <!--   To scriptaki pou einai upeuthino gia to kalathi     -->
-    <script src="js\\cortBuy.js"></script>
+    <script src="js/cortBuy.js"></script>
     <!--   To scriptaki pou einai upeuthino gia to pagination     -->
-    <script src="js\\pagination.js"></script>
+    <script src="js/pagination.js"></script>
 
-    <script src="js\\filters.js"></script>
+    <script src="js/filters.js"></script>
 
-    <script src="js\\ajaxCaller.js"></script>
+    <script src="js/ajaxCaller.js"></script>
 		
-<?php include "scripts\\footer.php" ?>
+<?php include "scripts/footer.php" ?>
