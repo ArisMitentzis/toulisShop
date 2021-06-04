@@ -17,10 +17,8 @@ could also view all the orders and edit their state. Finally, he may view all th
 and some statistics. 
 
 Technical description:
-Back-end:
-    - MySql database   - Functional PHP
-Front-end:
-   - HTML,CSS,Bootstrap   - Javascript,JQuery,Ajax
+- Back-end:  MySql database, Functional PHP
+- Front-end: HTML-CSS-Bootstrap, Javascript-JQuery-Ajax
       
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
